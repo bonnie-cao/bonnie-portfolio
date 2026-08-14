@@ -146,6 +146,42 @@ body{
   font-style: normal;
 }
 
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-serif-medium {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-serif-semibold {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-serif-regular-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-serif-medium-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-serif-semibold-italic {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
 .large-text {
   font-size: 48px;
 }
@@ -707,6 +743,16 @@ h3 {
   .letter-text .small-text {
     font-size: 16px;
     line-height: 1.3;
+  }
+
+  .letter .letter-text h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+    .letter .letter-text p {
+    margin-top: 0;
+    margin-bottom: 2px;
   }
 
   .letter-text .button {
