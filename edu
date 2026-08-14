@@ -1,0 +1,7 @@
+            <div class="school">
+                <img src="./images/waterloo.png" alt="University of Waterloo">
+                <span class="playfair small-text">Mechatronics Engineering</span><span class="playfair-italic small-text">2026 - 2031</span>
+            </div>
+            <div class="school">
+                <img src="./images/mcmaster.png" alt="McMaster University">
+                <span class="playfair small-text">Health Sciences</span><span class="playfair-italic small-text">2024 - 2026</span>
