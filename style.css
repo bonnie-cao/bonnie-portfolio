@@ -604,7 +604,7 @@ h3 {
     max-height: 240px;
   }
 
-  /* Keep the contact content over the letter artwork on mobile. */
+  /* mobile */
   .letter-contact {
     position: relative;
     width: 100%;
@@ -663,8 +663,15 @@ h3 {
   }
 
   /* page titles */
-  .bonnieporttext,
-  .secondary-text {
+  .bonnieporttext {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: -25px;
+  }
+
+    .secondary-text {
     width: 100%;
     max-width: 650px;
     height: auto;
@@ -680,7 +687,7 @@ h3 {
     top: auto;
     right: auto;
     left: auto;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
   }
 
   /* index letter */
