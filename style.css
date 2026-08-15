@@ -256,6 +256,19 @@ body{
     font-size: 30px;
 }
 
+/* mobile */
+
+@media (max-width: 600px) {
+
+  .letter > .small-text{
+    font: size 18.5px;
+  }
+
+  .letter > .large-text{
+    font-size:25px;
+  }
+
+
 /* if in the same element */
 .tight-text {
   line-height: 1.1;
@@ -607,7 +620,7 @@ h3 {
     background: none;
     border: 0;
     border-radius: 0;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .letter > .letter-background {
@@ -615,7 +628,7 @@ h3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 134%;
+    width: 140%;
     max-width: none;
     height: auto;
     margin: 0;
