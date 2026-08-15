@@ -610,7 +610,7 @@ h3 {
     top: 100px;
   }
 
-  /* Rotate the index letter into a portrait layout on mobile. */
+  /* rotate letter into portrait mode */
   .letter {
     position: relative;
     width: 100%;
@@ -674,7 +674,7 @@ h3 {
     justify-content: center;
   }
 
-  /* Keep the index content compact enough for the portrait letter. */
+  /* reducing font size */
   .letter > .letter-text .large-text {
     font-size: 21px;
   }
@@ -682,10 +682,6 @@ h3 {
   .letter > .letter-text .small-text {
     font-size: 13px;
     line-height: 1.3;
-  }
-
-  .letter > .letter-text br + br {
-    display: none;
   }
 
   .letter > .letter-text .button {
