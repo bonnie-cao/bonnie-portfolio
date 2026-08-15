@@ -681,6 +681,7 @@ h3 {
   }
 
   .letter-contact .icon-button {
+    background-color: transparent;
     width: 100%;
     max-width: 260px;
     margin: 0 auto;
