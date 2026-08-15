@@ -591,6 +591,11 @@ h3 {
     border-radius: 16px;
   }
 
+  .letter-contact > .letter-text {
+    width: 100%;
+    top: 100px;
+  }
+
   .letter > .letter-background {
     display: none;
   }
@@ -661,14 +666,14 @@ h3 {
 
   .letter-contact > .letter-text {
     position: absolute;
-    top: 48%;
+    top: 52%;
     left: 50%;
-    width: 78%;
+    width: 70%;
     transform: translate(-50%, -50%);
   }
 
   .letter-contact .large-text {
-    font-size: clamp(17px, 5vw, 24px);
+    font-size: clamp(15px, 4.5vw, 21px);
     line-height: 1.2;
   }
 
@@ -686,7 +691,7 @@ h3 {
     max-width: 260px;
     margin: 0 auto;
     padding: 7px 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
