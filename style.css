@@ -598,7 +598,7 @@ h3 {
     display: block;
     width: min(45vw, 170px);
     height: auto;
-    margin: 0 auto -10px;
+    margin: 0 auto 5px;
     opacity: 0;
     animation: headshotFadeDown 2s ease-out 1.3s forwards;
   }
