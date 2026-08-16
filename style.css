@@ -793,7 +793,7 @@ h3 {
     margin-bottom: -25px;
   }
 
-    .secondary-text {
+  .secondary-text {
     width: 100%;
     max-width: 650px;
     height: auto;
@@ -838,7 +838,7 @@ h3 {
 
     .letter .letter-text p {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   .letter-text .button {
