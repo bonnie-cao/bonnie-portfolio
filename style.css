@@ -29,6 +29,10 @@ body{
     max-width: 1050px;
   }
 
+  body .letter-stage {
+    max-width: 1050px;
+  }
+
   .letter .large-text {
     font-size: 38px;
   }
@@ -312,6 +316,13 @@ h3 {
 
 
 /* letter */
+.letter-stage {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .letter {
   position: relative;
   width: 100%;
@@ -855,5 +866,15 @@ h3 {
   .project-image {
     width: 180px;
     height: 150px;
+  }
+}
+
+
+/* Standard desktop: keep the headshot tied to the centered content. */
+@media (min-width: 1025px) {
+  .letter-stage .headshot {
+    top: 180px;
+    right: auto;
+    left: 80%;
   }
 }
