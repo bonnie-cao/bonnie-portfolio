@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- bg photo -->
+<style>
+body {
+  background-image: url('./images/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonnie Cao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-slideshow { position: relative; min-width: 0; }
+        .project-slideshow .project-image { width: 100%; }
+        .project-slideshow .project-image[hidden] { display: none; }
+        .slideshow-controls {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 8px; margin-top: 8px;
+        }
+        .slideshow-arrow, .slideshow-dot {
+            border: 1px solid #467caf; background: #e9ebe4; color: #467caf;
+            cursor: pointer;
+        }
+        .slideshow-arrow { border-radius: 8px; min-width: 30px; min-height: 20px; font-size: 20px; }
+        .slideshow-dots { display: flex; justify-content: center; flex-wrap: wrap; gap: 2px; }
+        .slideshow-dot { width: 24px; height: 10px; padding: 6px; border: 0; background: transparent; }
+        .slideshow-dot::before {
+            content: ""; display: block; width: 6px; height: 6px;
+            border: 1px solid #467caf; border-radius: 50%;
+        }
+        .slideshow-dot[aria-current="true"]::before { background: #467caf; }
+        .slideshow-arrow:focus-visible, .slideshow-dot:focus-visible {
+            outline: 2px solid #467caf; outline-offset: 2px;
+        }
+        .slideshow-status {
+            position: absolute; width: 1px; height: 1px; overflow: hidden;
+            clip-path: inset(50%); white-space: nowrap;
+        }
+    </style>
+</head>
+
+<article>
+    <header>
+            <a class="ibm-plex-serif-medium-italic small-text button" href="index.html">Home</a>
+            <a class="ibm-plex-serif-medium-italic small-text button" href="mywork-slideshow.html">My Work</a>
+            <a class="ibm-plex-serif-medium-italic small-text button" href="contact.html">Contact</a>
+            <a class="ibm-plex-serif-medium-italic small-text button" href="https://github.com/bonnie-cao" 
+            target="_blank" rel="noopener noreferrer">Github</a><br>
+    </header>
+</article>
+
+
+<body>
+    <div>
+        <img src="./images/work.png" class="secondary-text">
+    </div>
+    <div class="container">
+
+        <div class="project-card"> 
+            <div class="project-slideshow" role="region" aria-roledescription="carousel" aria-label="Project images">
+                <img class="project-image" src="./images/sunsim_solidworks.png" alt="solidworks assembly">
+                <img class="project-image" src="./images/lamphead.png"
+            alt="CubeSat on SolidWorks">
+            </div>
+            <div class="project-info">
+                <h2 class="ibm-plex-serif-semibold-italic">Solar Panel Testing Rig</h2>
+                <p class="ibm-plex-serif-medium small-text tight-text">Modeling and 3D printing a PCB mounting system for CubeSat solar panel testing.</p>
+                    <br>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://www.uworbital.com/"
+                target="_blank" rel="noopener noreferrer">UW Orbital</a>
+            </div>
+        </div>
+
+        <div class="project-card"> 
+            <div class="project-slideshow" role="region" aria-roledescription="carousel" aria-label="Project images">
+                <img class="project-image" src="./images/sean.gif"
+            alt="Simulating Black Hole Emissions">
+                <img class="project-image" src="./images/heatingmodel_cks.png" alt="heating model graph">
+            </div>
+            <div class="project-info">
+                <h2 class="ibm-plex-serif-semibold-italic">Simulating Black Hole Emissions</h2>
+                <p class="ibm-plex-serif-medium small-text tight-text">Characterizing near-infrared thermal emissions from
+                    Sagittarius A*. Visualizing magnetohydrodynamic simulations and time series black hole data with 
+                    photon trajectories. Supervised by Dr. Sean Ressler.</p>
+                    <br>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://github.com/bonnie-cao/blacklight-simulations" 
+                target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+        </div>
+
+        <div class="project-card"> 
+            <div class="project-slideshow" role="region" aria-roledescription="carousel" aria-label="Project images">
+                <img class="project-image" src="./images/cubesat.png"
+            alt="CubeSat on SolidWorks">
+            </div>
+            <div class="project-info">
+                <h2 class="ibm-plex-serif-semibold-italic">CubeSat Satellites</h2>
+                <p class="ibm-plex-serif-medium small-text tight-text">Building CubeSat satellites on SolidWorks for UW Orbital. 
+                    Developing a Quantum Key Distribution system by determining the orientation of a infrared laser entering an Arducam.</p>
+                    <br>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://www.uworbital.com/"
+                target="_blank" rel="noopener noreferrer">UW Orbital</a>
+            </div>
+        </div>
+
+        <div class="project-card"> 
+            <div class="project-slideshow" role="region" aria-roledescription="carousel" aria-label="Project images">
+                <img class="project-image" src="./images/pokeanki.gif"
+            alt="Pokemon Anki Add-on">
+            </div>
+            <div class="project-info">
+                <h2 class="ibm-plex-serif-semibold-italic">Pokemon Anki Add-on</h2>
+                <p class="ibm-plex-serif-medium small-text tight-text">An add-on for the popular flashcard studying app, Anki. 
+                    Inspired by my Health Sciences background, combining the Pokemon game with flashcard 
+                    memorization to make studying a little less boring.</p>
+                    <br>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://github.com/bonnie-cao/pokeanki"
+                target="_blank" rel="noopener noreferrer">Github</a>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://ankiweb.net/shared/info/1977818525"
+                target="_blank" rel="noopener noreferrer">AnkiWeb</a>
+            </div>
+        </div>
+
+        <div class="project-card"> 
+            <div class="project-slideshow" role="region" aria-roledescription="carousel" aria-label="Project images">
+                <img class="project-image" src="./images/yanlong.png"
+            alt="Simulating Quasi-Star Evolutions">
+            </div>
+            <div class="project-info">
+                <h2 class="ibm-plex-serif-semibold-italic large-text">Simulating Quasi-Star Evolutions</h2>
+                <p class="ibm-plex-serif-medium small-text tight-text">Analysing the spin evolution of black holes within the convective 
+                    core of a star. Designing simulations to represent quasi-star evolution. Supervised by Dr. Yanlong Shi.</p>
+                    <br>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://github.com/bonnie-cao/mesa-simulations" 
+                target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+        </div>
+
+        <div class="project-card"> 
+            <div class="project-slideshow" role="region" aria-roledescription="carousel" aria-label="Project images">
+                <img class="project-image" src="./images/exoplanets.png"
+            alt="Detecting Exoplanets">
+            </div>
+            <div class="project-info">
+                <h2 class="ibm-plex-serif-semibold-italic large-text">Detecting Exoplanets</h2>
+                <p class="ibm-plex-serif-medium small-text tight-text">Python-based workflow with Lightkurve to extract and analyse data from NASA’s 
+                    space telescopes, TESS and Kepler.
+                    Identified exoplanets by applying transit light curve methods.</p>
+                    <br>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://github.com/bonnie-cao/kepler-light-curve" 
+                target="_blank" rel="noopener noreferrer">Sample</a>
+            </div>
+        </div>
+
+        <div class="project-card"> 
+            <div class="project-slideshow" role="region" aria-roledescription="carousel" aria-label="Project images">w
+                <img class="project-image" src="./images/rube.png"
+            alt="Rube Goldberg Machine">
+            </div>
+            <div class="project-info">
+                <h2 class="ibm-plex-serif-semibold-italic large-text">Whipped Cream Dispenser Rube Goldberg Machine</h2>
+                <p class="ibm-plex-serif-medium small-text tight-text">Rube Goldberg inspired machine consisting of 7 
+                    mechanical mechanisms to dispense whipped cream. Paired with a report quantifying the physics and measurements of the machine.</p>
+                    <br>
+                <a class="ibm-plex-serif-medium-italic small-text button" href="https://www.youtube.com/shorts/iUsKStygse4" 
+                target="_blank" rel="noopener noreferrer">Video</a>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+<script>
+
+document.querySelectorAll('.project-slideshow').forEach((slideshow) => {
+    const images = Array.from(slideshow.querySelectorAll('.project-image'));
+    const title = slideshow.closest('.project-card').querySelector('h2').textContent;
+    slideshow.setAttribute('aria-label', title + ' images');
+    if (images.length < 2) return;
+
+    let current = 0;
+    const controls = document.createElement('div');
+    controls.className = 'slideshow-controls';
+    const dots = document.createElement('div');
+    dots.className = 'slideshow-dots';
+    dots.setAttribute('role', 'group');
+    dots.setAttribute('aria-label', 'Choose image');
+    const status = document.createElement('span');
+    status.className = 'slideshow-status';
+    status.setAttribute('aria-live', 'polite');
+    status.setAttribute('aria-atomic', 'true');
+    const dotButtons = [];
+
+    function show(index) {
+        current = (index + images.length) % images.length;
+        images.forEach((img, i) => { img.hidden = i !== current; });
+        dotButtons.forEach((dot, i) => {
+            if (i === current) dot.setAttribute('aria-current', 'true');
+            else dot.removeAttribute('aria-current');
+        });
+        status.textContent = 'Image ' + (current + 1) + ' of ' + images.length;
+    }
+
+    function arrow(label, symbol, step) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'slideshow-arrow';
+        button.setAttribute('aria-label', label);
+        button.textContent = symbol;
+        button.addEventListener('click', () => show(current + step));
+        return button;
+    }
+
+    images.forEach((img, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'slideshow-dot';
+        dot.setAttribute('aria-label', 'Show image ' + (i + 1) + ': ' + img.alt);
+        dot.addEventListener('click', () => show(i));
+        dotButtons.push(dot);
+        dots.append(dot);
+    });
+    controls.append(arrow('Previous image', '‹', -1), dots, arrow('Next image', '›', 1));
+    slideshow.append(controls, status);
+    slideshow.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            show(current + (event.key === 'ArrowLeft' ? -1 : 1));
+        }
+    });
+    show(0);
+});
+</script>
+
+</body>
+</html>
