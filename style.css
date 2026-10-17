@@ -113,12 +113,7 @@ body{
     visibility: hidden;
   }
 }
-/* accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .letter {
-    animation: none;
-  }
-}
+
 
 
 /* heading */
@@ -212,12 +207,7 @@ body{
     transform: translateY(0);
   }
 }
-/* accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .letter {
-    animation: none;
-  }
-}
+
 
 .secondary-text {
     width: 100%;
@@ -241,12 +231,7 @@ body{
     transform: translateY(0);
   }
 }
-/* accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .letter {
-    animation: none;
-  }
-}
+
 
 
 
@@ -344,12 +329,7 @@ h3 {
     transform: translateY(0) rotate(0deg);
   }
 }
-/* accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .letter {
-    animation: none;
-  }
-}
+
 
 
 
@@ -386,12 +366,7 @@ h3 {
     transform: translateY(0) rotate(6deg);
   }
 }
-/* accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .letter {
-    animation: none;
-  }
-}
+
   
 
 .letter > .letter-background { /* targets only the letter background*/
@@ -440,12 +415,7 @@ h3 {
     transform: translateY(0);
   }
 }
-/* accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .letter {
-    animation: none;
-  }
-}
+
 
 .project-card {
   background-color: #e9ebe4;
@@ -517,12 +487,7 @@ h3 {
     transform: translateY(0) rotate(0deg);
   }
 }
-/* accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .letter {
-    animation: none;
-  }
-}
+
 
 .contact-buttons {
   display: flex;
@@ -888,5 +853,37 @@ h3 {
     top: 180px;
     right: auto;
     left: 80%;
+  }
+}
+
+
+/* release every opening animation together once the objects are ready */
+html.animations-pending :is(.envelope, .letter, .letter-contact, .headshot,
+    .bonnieporttext, .secondary-text, .container) {
+  animation-play-state: paused;
+}
+
+/* no animations */
+html.animations-skip :is(.letter, .letter-contact, .headshot,
+    .bonnieporttext, .secondary-text, .container) {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+html.animations-skip .envelope {
+  animation: none;
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.letter, .letter-contact, .headshot, .bonnieporttext,
+      .secondary-text, .container) {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .envelope {
+    animation: none;
+    display: none;
   }
 }
