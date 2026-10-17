@@ -857,6 +857,27 @@ h3 {
 }
 
 
+/* fix mobile background sizing */
+@media (max-width: 1024px) {
+  html {
+    background-color: #a8c8d3;
+  }
+
+  body {
+    background-image: none;
+    isolation: isolate;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: #a8c8d3 url('./images/bg.png') center top / cover no-repeat;
+  }
+}
+
 /* release every opening animation together once the objects are ready */
 html.animations-pending :is(.envelope, .letter, .letter-contact, .headshot,
     .bonnieporttext, .secondary-text, .container) {
